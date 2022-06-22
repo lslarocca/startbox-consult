@@ -6,7 +6,7 @@ html, body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    }
+}
 
 .container {
     margin: 0 auto;
@@ -14,9 +14,69 @@ html, body {
     max-width: 1200px;
 }
 
+.row {
+    display: flex;
+}
+
+[class*="col-"] {
+    padding: 0 15px;
+}
+
+.col-1 {
+    width: 8.3333%;
+}
+
+.col-2 {
+    width: 16.6666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3333%;
+}
+
+.col-5 {
+    width: 41.6666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.3333%;
+}
+
+.col-8 {
+    width: 66.6666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.3333%;
+}
+
+.col-11 {
+    width: 91.6666%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
 .main-menu {
     background-color: #17161A;
     padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .main-menu .layout {
@@ -58,36 +118,25 @@ html, body {
     width: 1rem;
 }
 
-main{
+.home-main {
     background-image: url("../img/home-bg-man.jpg");
     background-size: cover;
+    padding: 150px 0 70px;
 }
 
-.home-main .row-1 {
-    max-width: 100%;
-    display: flex;
+.home-main .row {
     align-items: center;
-    justify-content: flex-end;
-    margin: 70px 15px 0;
-}
-
-.home-main .col-7 {    
-    max-width: 58.33%;
-    margin: 0 auto;
-    width: auto;
-    color: white;
-    word-wrap: break-word;
-    word-break: normal;
-    text-align: left;
 }
 
 .home-main h2 {
+    color: white;
     font-size: 3.15rem;
-    margin:0 0 25px;    
+    margin: 0 0 25px;    
 }
 
-.home-main p {
+.home-main .subtitle {
     font-size: 1.15rem;
+    color: white;
     margin: 0 0 40px;
     padding: 0 70px 0 0;
 }
@@ -98,20 +147,42 @@ main{
     text-decoration: underline;
 }
 
-.home-main .col-5 {
-    max-width: 41.66%;  
-    margin: 70px 0 0;
-    padding: 0 15px;
-}
-
 .home-main form {
-    margin-left: 50px;
-    padding: 20px;
     background-color: white;
-    border-radius: 3%;        
+    border-radius: 14px;
+    margin-left: 70px;
+    padding: 35px;
+    text-align: center;           
 }
 
-.home-main input {
-    padding: 10px;
-    margin-top: 5px;
+.home-main h3 {
+    font-size: 1.25rem;
+    margin: 18px 0;
+}
+
+.home-main input,
+.home-main select {
+    width: 100%;
+    margin-top: 13px;
+    padding: 14px 20px;
+    background-color: rgba(177, 177, 180, 0.17);
+    border-radius: 6px;
+    border: none;
+}
+
+.home-main form p {
+    color: #4B4A4D;
+    font-size: 0.8125rem;
+    margin: 25px 0;
+    padding: 0 40px;
+}
+
+.home-main button {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #F01F4B;
+    padding: 15px 40px;
+    border-radius: 360px;
+    border: none;
 }
