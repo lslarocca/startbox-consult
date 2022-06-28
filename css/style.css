@@ -8,6 +8,10 @@ html, body {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 15px;
@@ -16,6 +20,7 @@ html, body {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 [class*="col-"] {
@@ -219,4 +224,60 @@ html, body {
     width: 36px;
     height: 40px;
 }
+
+.home-cards {
+    text-align: center;
+}
+
+.home-cards h4 {
+    font-size: 36px;
+}
+
+.home-cards .card-link {
+    position: relative;
+    display: flex;
+    color: black;
+    background-color: #f5f5f7;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: .6s ease;
+    top: 0; 
+}
+
+.home-cards .card-link:hover {
+    top: -15px;
+}
+
+.home-cards .card-img {
+    width: 200px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.home-cards .card-img img {
+    transition: .15s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.home-cards .card-link:hover img {
+    transform: scale(1.05);
+}
+
+.card-text {
+    padding: 25px 60px 25px 50px;
+    display: flex;
+    flex-flow: column;
+}
+
+.card-link h4 {
+    margin: 0 0 15px;
+    font-size: 1.25rem;
+}
+    
+
 
