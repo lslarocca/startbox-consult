@@ -80,6 +80,7 @@ img {
     color: white;
     font-size: 1rem;
     font-weight: bold;
+    text-decoration: none;
     background-color: #F01F4B;
     padding: 15px 40px;
     border-radius: 360px;
@@ -101,6 +102,7 @@ img {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 
 .main-menu .layout {
@@ -227,9 +229,12 @@ img {
 
 .home-cards {
     text-align: center;
+    padding: 120px 0 130px;
 }
 
 .home-cards h4 {
+    padding: 0 15px;
+    margin-bottom: 90px;
     font-size: 36px;
 }
 
@@ -274,10 +279,30 @@ img {
     flex-flow: column;
 }
 
-.card-link h4 {
-    margin: 0 0 15px;
+.home-cards .card-link h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
     font-size: 1.25rem;
 }
-    
+.home-cards .card-link p {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
 
+.home-cards .card-arrow {
+    position: relative;
+    display: flex;
+    transition: .15s linear;   
+    right: 0;
+}
 
+.home-cards .card-link:hover .card-arrow {
+    right: -15px;
+    color: #F01F4B;
+}
+
+.home-cards .btn {
+    display: block;
+    margin: 80px auto 0;
+    width: fit-content;
+}
