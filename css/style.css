@@ -232,10 +232,31 @@ img {
     padding: 120px 0 130px;
 }
 
-.home-cards h4 {
-    padding: 0 15px;
+.home-cards h3 {
+    display: block;
+    padding: 0 300px;
+    text-align: center;
     margin-bottom: 90px;
     font-size: 36px;
+}
+
+.home-cards .underline-text {
+    position: relative;
+
+}
+
+.home-cards .underline-text::after {
+    content: "";
+    position: absolute;
+    top: calc(100% - 7.5px);
+    right: 0;
+    left: 0;
+    height: 15px;
+    background-image: url(../img/underlinetxt.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
 }
 
 .home-cards .card-link {
